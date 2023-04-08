@@ -1,3 +1,9 @@
+<!-- 
+Autor: Jose Angel Garcia Gomez
+Date: 11-2021
+Description: Main page of the project
+-->
+
 <?php
     echo "
 <!doctype html>

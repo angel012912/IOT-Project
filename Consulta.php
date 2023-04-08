@@ -1,3 +1,9 @@
+<!-- 
+Autor: Jose Angel Garcia Gomez
+Date: 11-2021
+Description: Page of the Project that performs the queries of the data of the sensors
+-->
+
 <?php
 //Solo espliega mensajes de error, omitir los mensajes "WARNING"
 error_reporting(E_ERROR | E_PARSE);
@@ -205,9 +211,9 @@ $connection = mysqli_connect("localhost", "root", "", "iot");
 if(isset($_POST['ConsultaCO2'])){
     //Se obtinene la opcion elegida por el usuario
     $valor = $_POST['CO2'];
-    //Evalua que opcion seleccionó
+    //Evalua que opcion seleccionï¿½
     if($valor == 'Promedio'){
-        //Diseño de la tabla a desplegar
+        //Diseï¿½o de la tabla a desplegar
         echo "<div class = 'card card-signin my-5 col-sm-9 mx-auto sombra' id = 'listaCons' style='text-align: center'>
                 <table class=' table table-hover table-borderless' >
                 <thead>
@@ -318,7 +324,7 @@ if(isset($_POST['ConsultaCO2'])){
 elseif(isset($_POST['ConsultaTemp'])){
     //Se obtiene la opcion que el usuario selecciono
     $valor = $_POST['TEMP'];
-    //Se evalua la opcion que se ingresó
+    //Se evalua la opcion que se ingresï¿½
     if($valor == 'Promedio'){
         echo "<div class = 'card card-signin my-5 col-sm-9 mx-auto sombra' id = 'listaCons' style='text-align: center'>
                 <table class=' table table-hover table-borderless '>
@@ -439,7 +445,7 @@ elseif(isset($_POST['ConsultaPerso'])){
     Select unidades.DESCRIPCION, sensores.DESCRIPCION, lugares.NOMBRE, monitoreo.FECHA, monitoreo.HORA, monitoreo.TIPOMEDICION, monitoreo.VALOR 
     from monitoreo, sensores, lugares, unidades 
     where monitoreo.IP_UNIDAD = unidades.IP_UNIDAD and monitoreo.SENSOR = sensores.ID_SENSOR and monitoreo.LUGAR = lugares.ID_LUGAR ";
-    //Se evalua para cada campo del formulario si se ingreso o selecciono algun valor. Si sí se selecciono agrega al mensaje con el query principal el filtro necesario. 
+    //Se evalua para cada campo del formulario si se ingreso o selecciono algun valor. Si sï¿½ se selecciono agrega al mensaje con el query principal el filtro necesario. 
     if($medicion != 'NADA'){
         $mensaje = $mensaje . " and monitoreo.TIPOMEDICION = '$medicion' ";
     }

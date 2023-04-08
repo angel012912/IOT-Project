@@ -1,3 +1,9 @@
+<!-- 
+Autor: Jose Angel Garcia Gomez
+Date: 11-2021
+Description: This programs performs the display of the data in the database. 
+-->
+
 <?php
 //Quitar los warnings
 error_reporting(E_ERROR | E_PARSE);
