@@ -12,10 +12,16 @@ This project was part of the course "Internet of Things Implementation" where I 
 * Arduino Language
 
 ## Installation
-* Make sure to have 
+* Make sure to have already installed XAMPP, if not you can download [here](https://www.apachefriends.org/es/index.html)
+* Download the repository and locate the root directory inside the <code>htdocs</code> directory. 
+* In the phpmyadmin interface generate a database named iot
+* Now you can acces to <code>localhost/IOT-PROJECT-main/HomePage.php</code>
+
+### Note:
+* If you want to view data from your own arduino you has to use the <code>Sensores.ino</code> file on your arduino. 
 
 ## Screenshots
-<img src="./MainPage.png" alt="Main Page of the Platform" style="float: left; margin: 50px;" width="200"/> 
-<img src="./MainPage2.png" alt="Second Section of the Main Page" style="float: left; margin: 50px;" width="200"/> 
-<img src="./MainPage3.png" alt="Third Section of the Main Page" style="float: left; margin: 50px;" width="200"/> 
-<img src="./DataQuey.png" alt="Data Query Section" style="float: left; margin: 50px;" width="200"/> 
+<img src="./images/MainPage.png" alt="Main Page of the Platform" style="float: left; margin: 50px;" width="200"/> 
+<img src="./images/MainPage2.png" alt="Second Section of the Main Page" style="float: left; margin: 50px;" width="200"/> 
+<img src="./images/MainPage3.png" alt="Third Section of the Main Page" style="float: left; margin: 50px;" width="200"/> 
+<img src="./images/DataQuey.png" alt="Data Query Section" style="float: left; margin: 50px;" width="200"/> 
